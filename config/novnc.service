@@ -1,0 +1,15 @@
+[Unit]
+Description=noVNC local accessible par SSH
+Wants=wayvnc.service
+After=network.target wayvnc.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=pi-os
+ExecStart=/usr/bin/websockify --web=/usr/share/novnc/ 127.0.0.1:6080 127.0.0.1:5900
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

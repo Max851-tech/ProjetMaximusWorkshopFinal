@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.log
+.env
+modeles_visages/
+visages_connus/
+*.onnx
+*.npz
+id_ed25519*
+*.pem
+*.key

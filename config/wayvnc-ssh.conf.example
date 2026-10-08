@@ -1,0 +1,7 @@
+# Extrait documente, pas un remplacement complet de /etc/wayvnc/config.
+# L'installateur conserve les autres options et sauvegarde le fichier existant.
+address=127.0.0.1
+port=5900
+enable_auth=false
+# Authentification distante et chiffrement assures par le tunnel SSH.
+# Les autres comptes locaux du Pi peuvent joindre les ports locaux.
